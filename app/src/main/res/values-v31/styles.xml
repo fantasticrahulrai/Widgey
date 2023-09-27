@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="Widget.Widgey.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_background</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="Widget.Widgey.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_inner_view_background</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="Widget.Wallcandy.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_background</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="Widget.Wallcandy.AppWidget.Container.LightBlack" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/app_widget_background_black</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="Widget.Wallcandy.AppWidget.Container.Card" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/app_widget_background</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="Widget.Wallcandy.AppWidget.Container.NoPaading" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/app_widget_background_black</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="Widget.Wallcandy.AppWidget.Container.LessPadding" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/app_widget_background_black</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+
+    <style name="Widget.Wallcandy.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_inner_view_background</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+</resources>

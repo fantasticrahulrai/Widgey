@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Wallcandy.AppWidget.Container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sans_semibold"
+            android:text="Monday,"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/day"
+            android:fontFamily="@font/sans_semibold"
+            android:text="Jan 21"
+            android:padding="4dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/grettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:fontFamily="@font/sans_semibold"
+        android:layout_centerHorizontal="true"
+        android:text="Have a nice day"
+        android:textSize="14sp"
+        android:layout_marginStart="4dp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

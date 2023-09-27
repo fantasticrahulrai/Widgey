@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppWidgetContainer"
+    android:background="@drawable/card">
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh"
+        android:textColor="@color/lightblack"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:hint="12"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"/>
+
+    <TextClock
+        android:id="@+id/textClock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="mm"
+        android:hint="00"
+        android:textColor="@color/lightblack"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_below="@+id/textClock"/>
+
+</RelativeLayout>

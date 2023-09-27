@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="45.0" android:toDegrees="45.0" android:pivotX="50.0%" android:pivotY="50.0%"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <inset android:insetLeft="5.0dip" android:insetRight="5.0dip" android:insetTop="2.0dip" android:insetBottom="2.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="1000.0dip" />
+            <solid android:color="@color/adaptive" />
+            <stroke android:width="1.0px" android:color="#b37b7b7b" />
+            <size android:height="50.0dip" android:width="38.19998dip" />
+        </shape>
+    </inset>
+</rotate>

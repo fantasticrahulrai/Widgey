@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+
+    <AnalogClock
+        android:background="@android:color/transparent"
+        android:id="@+id/simpleAnalogClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dial="@drawable/clock_face_original_green"
+        android:hand_hour="@drawable/hour_face"
+        android:hand_minute="@drawable/minute_face_green"
+        android:dialTint="@android:color/system_neutral1_0"
+        android:hand_hourTint="@android:color/system_accent1_700"
+        android:hand_minuteTint="@android:color/system_accent1_400"
+        android:hand_second="@drawable/second"
+        android:hand_secondTint="@android:color/system_accent1_700"/>
+
+</RelativeLayout>

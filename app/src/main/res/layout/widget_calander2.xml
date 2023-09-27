@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="130dp">
+
+    <ImageView
+        android:id="@+id/weatherBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_calendar2_small_bg" />
+
+    <TextClock
+        android:id="@+id/day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="22dp"
+        android:layout_weight="26.0"
+        android:autoSizeMaxTextSize="@dimen/sp_18"
+        android:autoSizeMinTextSize="@dimen/sp_6"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="none"
+        android:format12Hour="EEE"
+        android:format24Hour="EEE"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="FRI"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold" />
+
+    <TextClock
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:autoSizeMaxTextSize="@dimen/sp_60"
+        android:autoSizeMinTextSize="@dimen/sp_25"
+        android:autoSizeTextType="uniform"
+        android:ellipsize="none"
+        android:format12Hour="d"
+        android:format24Hour="d"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="25"
+        android:textColor="@color/color_332e2e"
+        android:textSize="@dimen/sp_60"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

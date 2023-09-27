@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Wallcandy.AppWidget.Container"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+
+    <TextClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="4:22"
+        android:format12Hour="hh:mm"
+        android:textColor="@android:color/white"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"/>
+
+
+    <TextView
+        android:id="@+id/quotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:fontFamily="@font/sans_regular"
+        android:layout_centerHorizontal="true"
+        android:text="Imagination is more important than knowledge."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginStart="4dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

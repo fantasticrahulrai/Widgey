@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_regular"
+        android:layout_centerHorizontal="true"
+        android:text="Today's"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_regular"
+        android:text="Tuesday"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:layout_below="@+id/today"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_semibold"
+        android:text="28 February"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_below="@+id/day"/>
+
+
+</RelativeLayout>

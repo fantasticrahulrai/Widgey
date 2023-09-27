@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/widget_header"
+            layout="@layout/hearder_widgets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/analog_clock1"
+            layout="@layout/widget_analog_clock_preview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/analog_clock2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/widget_header" />
+
+        <include
+            android:id="@+id/analog_clock2"
+            layout="@layout/widget_analog_clock2_preview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/analog_clock3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/analog_clock1"
+            app:layout_constraintTop_toBottomOf="@+id/widget_header" />
+
+        <include
+            android:id="@+id/analog_clock3"
+            layout="@layout/widget_analog_clock3_preview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/analog_clock2"
+            app:layout_constraintTop_toBottomOf="@+id/widget_header" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analog_clock4"
+            android:src="@drawable/img_clock_small_5_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/analog_clock5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock1" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analog_clock5"
+            android:src="@drawable/img_clock_small_4_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/analog_clock6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/analog_clock4"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock1" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analog_clock6"
+            android:src="@drawable/img_clock_small_1_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf ="@+id/analog_clock5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock1" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analog_clock7"
+            android:src="@drawable/img_clock_small_2_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/analog_clock5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock4" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analog_clock8"
+            android:src="@drawable/img_clock_small_3_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/analog_clock7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/analog_clock9"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock4" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analog_clock9"
+            android:src="@drawable/img_clock_small_6"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf ="@+id/analog_clock8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock4" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/weather1"
+            android:src="@drawable/img_weather_small_1_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/weather2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock7"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/weather2"
+            android:src="@drawable/widget_weather2_img"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/weather3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/weather1"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock7"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/weather3"
+            android:src="@drawable/img_weather_small_3_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/weather2"
+            app:layout_constraintTop_toBottomOf="@+id/analog_clock7"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/calander1"
+            android:src="@drawable/img_calendar_small_1_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/calander2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weather1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/calander2"
+            android:src="@drawable/img_calendar_small_2_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/calander3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/calander1"
+            app:layout_constraintTop_toBottomOf="@+id/weather1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/calander3"
+            android:src="@drawable/img_calendar_small_4_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/calander2"
+            app:layout_constraintTop_toBottomOf="@+id/weather1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/textclock1"
+            android:src="@drawable/img_clock_small_7_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/textclock2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calander1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/textclock2"
+            android:src="@drawable/img_clock_small_8_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/textclock3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textclock1"
+            app:layout_constraintTop_toBottomOf="@+id/calander1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/textclock3"
+            android:src="@drawable/img_clock_small_9_xxhdpi"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textclock2"
+            app:layout_constraintTop_toBottomOf="@+id/calander1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

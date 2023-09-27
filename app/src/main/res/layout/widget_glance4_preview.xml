@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Wallcandy.AppWidget.Container"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_regular"
+        android:text="Hey 👋 Rahul!"
+        android:textSize="14sp"
+        android:paddingLeft="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_regular"
+        android:text="Good Evening"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_below="@+id/today"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_semibold"
+        android:text="Today's Friday, 12 May"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingLeft="4dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/day"/>
+
+
+</RelativeLayout>
