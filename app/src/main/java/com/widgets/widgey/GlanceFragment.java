@@ -103,6 +103,8 @@ public class GlanceFragment extends Fragment {
         FlurryAgent.logEvent("WidgetsFragment");
         Analytics.trackEvent("WidgetsFragment");
 
+        headercard.setVisibility(View.GONE);
+
         headercard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -2,15 +2,13 @@
 
     <style name="Widget.Widgey.AppWidget.Container" parent="android:Widget">
         <item name="android:id">@android:id/background</item>
-        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:background">@color/black</item>
     </style>
 
     <style name="Widget.Widgey.AppWidget.InnerView" parent="android:Widget">
         <item name="android:background">?android:attr/colorBackground</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
-
-
 
 
     <style name="customRoundedImageView" parent="">

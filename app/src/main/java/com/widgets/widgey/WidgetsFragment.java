@@ -17,12 +17,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
 import com.flurry.android.FlurryAgent;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -58,6 +60,7 @@ public class WidgetsFragment extends Fragment {
     private boolean hasLoadedOnce= false;
     private View v1, v2, v3, v4, v5, v6, v7, v8, v9, w1, w2, w3, c1, c2, c3, t1, t2, t3;
     private CardView headercard;
+    private ImageView imageView;
     String sName, sEmail, sDp, savedName;
     private static final int RC_SIGN_IN = 9001;
     private GoogleSignInClient mGoogleSignInClient;
@@ -112,9 +115,12 @@ public class WidgetsFragment extends Fragment {
         t1 = v.findViewById(R.id.textclock1);
         t2 = v.findViewById(R.id.textclock2);
         t3 = v.findViewById(R.id.textclock3);
+        imageView = v.findViewById(R.id.imageView);
 
         FlurryAgent.logEvent("WidgetsFragment");
         Analytics.trackEvent("WidgetsFragment");
+
+        headercard.setVisibility(View.GONE);
 
          headercard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -353,6 +359,13 @@ public class WidgetsFragment extends Fragment {
 
             }
         });
+
+
+        Glide.with(this)
+                .load(R.drawable.google25)
+                .placeholder(Utils.getRandomDrawbleColor())
+                .error(Utils.getRandomDrawbleColor())
+                .into(imageView);
 
         return v;
     }

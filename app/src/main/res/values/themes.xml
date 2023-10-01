@@ -22,7 +22,7 @@
     </style>
 
     <style name="ToolbarThemeCustomFont" parent="ThemeOverlay.AppCompat.DayNight">
-        <item name="android:fontFamily">@font/skranji</item>
+        <item name="android:fontFamily">@font/pacifico</item>
     </style>
 
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">

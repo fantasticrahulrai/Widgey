@@ -56,6 +56,7 @@ dependencies {
     implementation("org.apache.commons:commons-text:1.7")
     implementation("com.github.KwabenBerko:OpenWeatherMap-Android-Library:2.1.0")
 
+    implementation("com.github.bumptech.glide:glide:4.9.0")
     implementation("com.codemybrainsout.rating:ratingdialog:1.0.8")// Legacy Rating Dialog
     implementation("com.github.daniel-stoneuk:material-about-library:3.1.2")// About Page
     implementation("com.mikepenz:iconics-core:3.2.5") //Icons
