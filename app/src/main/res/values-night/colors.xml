@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#1F1B24</color>
+
+    <color name="black">#FFFFFF</color>
+    <color name="lightblack">#101010</color>
+    <color name="white">#121212</color>
+    <color name="colorTransparent">#FFFFFFFF</color>
+    <color name="purple">#BB86FC</color>
+
+    <color name="green">#38c172</color>
+    <color name="premiumred">#ff1744</color>
+
+
+    <color name="material_drawer_background">#121212</color>
+    <!-- Material DEFAULT text / items colors -->
+    <color name="material_drawer_primary_text">#FFFFFF</color>
+    <color name="material_drawer_primary_icon">#8AFFFFFF</color>
+    <color name="material_drawer_secondary_text">#8AFFFFFF</color>
+    <color name="material_drawer_hint_text">#42FFFFFF</color>
+    <color name="material_drawer_divider">#1FFFFFFF</color>
+    <!-- Material DEFAULT drawer colors -->
+    <color name="material_drawer_selected">#1F2196F3</color>
+    <color name="material_drawer_selected_legacy">#202020</color>
+    <color name="material_drawer_selected_text">#FFFFFF</color>
+    <color name="material_drawer_header_selection_text">#FFFFFFFF</color>
+    <color name="material_drawer_header_selection_subtext">#B3FFFFFF</color>
+
+    <color name="adaptive">#1F1B24</color>
+
+</resources>
