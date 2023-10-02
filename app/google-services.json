@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1036457509103",
+    "project_id": "widgeyapp",
+    "storage_bucket": "widgeyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036457509103:android:d2f28fc98a9672dd8adb1a",
+        "android_client_info": {
+          "package_name": "com.widgets.widgey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036457509103-r7q52ai7sqv8nvjbgbc79vmaorr82f5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.widgets.widgey",
+            "certificate_hash": "a9cfb1fc470488f89f1bbc4786afad3951350cbd"
+          }
+        },
+        {
+          "client_id": "1036457509103-18dckrn06n6v0cm844ce562osjnmjl39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqzm2XrUBan4bIL_LKtzW1GGnYhL3xHDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036457509103-18dckrn06n6v0cm844ce562osjnmjl39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

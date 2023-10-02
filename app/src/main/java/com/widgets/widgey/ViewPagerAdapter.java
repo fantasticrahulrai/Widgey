@@ -15,8 +15,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position) {
 
-            case 0: return WidgetsFragment.newInstance();
-            case 1: return GlanceFragment.newInstance();
+            case 0: return GlanceFragment.newInstance();
+            case 1: return WidgetsFragment.newInstance();
+
 
 
             default: return WidgetsFragment.newInstance();
@@ -28,7 +29,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         return 2;
     }
 
-    private String tabTitles[] = new String[]{  "Widgets", "Glance"};
+    private String tabTitles[] = new String[]{ "Glance", "Widgets"};
 
 
     @Override

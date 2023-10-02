@@ -490,6 +490,15 @@ public class WidgetsFragment extends Fragment {
                 sDp = Utils.Dp;
 
 
+            mEditor = mUserDetails.edit();
+            mEditor.putBoolean("signedin", true);
+            mEditor.putString("profilepic",sDp);
+            mEditor.putString("name", sName);
+            mEditor.putString("email",sEmail);
+            mEditor.apply();
+
+            Toast.makeText(context, "Google Signup Successful ", Toast.LENGTH_LONG).show();
+
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
